@@ -19,6 +19,8 @@ body {
     padding: 24px 64px;
     border: 1px solid #D7E4EE;
     background-color: var(--white);
+    flex-grow: 1;
+    gap: 16px;
 }
 
 .logo {
@@ -64,8 +66,8 @@ a {
 form {
     display: flex;
     justify-content: center;
-    flex-wrap: 1px;
     gap: 8px;
+    flex-grow: 1;
 }
 
 nav a {
@@ -107,10 +109,20 @@ main {
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0px 8px 24px 0px #12233F14;
-
+position: relative;
 }
 
+.update{
+    background-color: var(--flashbleu);
+    color: var(--white);
+    border-radius: 999px;
+    padding: 15px;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+    box-shadow: 0px 8px 24px 0px #12233F14;
 
+}
 .Ctop,
 .Cbottom {
     display: flex;
@@ -203,8 +215,84 @@ small {
 .div small {
     margin: 10px 0;
     display: block;
+    transition: tranform .5s, box-shadow .5s;
 }
 
 .div:hover {
     box-shadow: 0px 4px 10px 0px var(--gray);
+    transform: translateY(-10px);
 }
+
+.div-next {
+    background-color: var(--white);
+    border: 1px solid #D7E4EE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px 30px;
+    box-shadow: 0px 8px 24px 0px #12233F14;
+
+}
+
+.div-next-details {
+    margin: 10px;
+    background-color: var(--white);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.div-next-details:hover{
+    border-radius: 8px;
+    background-color: var(--flashbleu);
+    width: 100%;
+    color: var(--white);
+    font-weight: bold;
+
+}
+.div-next-details .p{
+    font-weight: bold;
+}
+.div-next-details p{
+    padding: 5px;
+}
+
+.this-week{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    text-align: center;
+}
+
+.week{
+      margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #D7E4EE;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 24px 0px #12233F14;
+}
+
+.week p{
+    padding: 5px;
+}
+.week:hover{
+      box-shadow: 0px 4px 10px 0px var(--gray);
+    transform: translateY(-10px);
+}
+
+.week-p{
+    color: var(--gray);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkblue);
+    color: var(--white);
+    padding: 40px ;
+}
+
