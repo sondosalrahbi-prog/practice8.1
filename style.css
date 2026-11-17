@@ -62,7 +62,6 @@ a {
     color: #12233F;
 }
 
-
 form {
     display: flex;
     justify-content: center;
@@ -109,20 +108,21 @@ main {
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0px 8px 24px 0px #12233F14;
-position: relative;
+    position: relative;
 }
 
-.update{
+.update {
     background-color: var(--flashbleu);
     color: var(--white);
     border-radius: 999px;
     padding: 15px;
     position: absolute;
     right: 20px;
-    top:-15px;
+    top: -15px;
     box-shadow: 0px 8px 24px 0px #12233F14;
 
 }
+
 .Ctop,
 .Cbottom {
     display: flex;
@@ -130,28 +130,20 @@ position: relative;
     align-items: center;
 
 }
-
-
 .text-currnt {
     color: var(--flashbleu);
     font-size: 12px;
     font-weight: bold;
 }
-
 .text-city {
     font-size: 40px;
 }
-
-
-
 .line {
     padding: 10px;
     border-bottom: 1px solid #D7E4EE;
 }
-
 small {
     color: #5F6F85;
-
 }
 
 .degree {
@@ -163,20 +155,16 @@ small {
     width: 64px;
     height: 96px;
     font-size: 64px;
-
 }
 
 .Weather-descr {
-
     padding: 10px;
-
 }
 
 .text-descr {
     font-size: 24px;
     color: var(--darkblue);
 }
-
 
 .Weather-details {
     padding: 40px 0;
@@ -186,9 +174,14 @@ small {
     display: flex;
     justify-content: space-between;
     gap: 8px;
+    width: 100%;
 }
 
-.cards .div {
+.card {
+    transition: transform .5s, box-shadow .5s;
+}
+
+.card {
     margin: 10px 0;
     padding: 20px;
     width: 100%;
@@ -196,15 +189,14 @@ small {
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0px 8px 24px 0px #12233F14;
-
+    text-align: center;
 }
 
-.text-day {
+.text {
     color: var(--flashbleu);
     font-size: 12px;
     font-weight: bold;
     margin: 10px;
-
 }
 
 .text-wd {
@@ -212,18 +204,18 @@ small {
     margin: 10px;
 }
 
-.div small {
+.card small {
     margin: 10px 0;
     display: block;
-    transition: tranform .5s, box-shadow .5s;
+
 }
 
-.div:hover {
+.card:hover {
     box-shadow: 0px 4px 10px 0px var(--gray);
     transform: translateY(-10px);
 }
 
-.div-next {
+.card-next {
     background-color: var(--white);
     border: 1px solid #D7E4EE;
     border-radius: 8px;
@@ -232,67 +224,46 @@ small {
     gap: 5px;
     padding: 10px 30px;
     box-shadow: 0px 8px 24px 0px #12233F14;
-
 }
 
-.div-next-details {
-    margin: 10px;
-    background-color: var(--white);
-    width: 100%;
-    padding: 20px;
-    text-align: center;
 
-}
-
-.div-next-details:hover{
+.next-details:hover {
+    border: #176BCE;
     border-radius: 8px;
     background-color: var(--flashbleu);
     width: 100%;
     color: var(--white);
     font-weight: bold;
+}
 
+.card.next-details {
+    border: none;
+    box-shadow: none;
 }
-.div-next-details .p{
-    font-weight: bold;
-}
-.div-next-details p{
+
+p {
     padding: 5px;
 }
 
-.this-week{
+.this-week {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 10px;
     text-align: center;
 }
 
-.week{
-      margin: 10px 0;
-    padding: 20px;
-    width: 100%;
-    border: 1px solid #D7E4EE;
-    border-radius: 8px;
-    background-color: var(--white);
-    box-shadow: 0px 8px 24px 0px #12233F14;
-}
-
-.week p{
+.card p {
     padding: 5px;
 }
-.week:hover{
-      box-shadow: 0px 4px 10px 0px var(--gray);
-    transform: translateY(-10px);
-}
 
-.week-p{
+.week-p {
     color: var(--gray);
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--darkblue);
     color: var(--white);
-    padding: 40px ;
+    padding: 40px;
 }
-
