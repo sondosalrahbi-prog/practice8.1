@@ -207,6 +207,8 @@ small {
 .card-next-details{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+
 }
 
 .text {
@@ -233,6 +235,7 @@ small {
 }
 
 .card-next {
+    box-sizing: border-box;
     background-color: var(--white);
     border-radius: 8px;
     display: flex;
@@ -253,6 +256,7 @@ small {
 }
 
 .next-details {
+
     
 
     border: none;
@@ -268,8 +272,14 @@ p {
     justify-content: space-between;
     gap: 10px;
     text-align: center;
-}
+    
 
+}
+.card-week{
+    display: flex;
+    flex-direction: column;
+
+}
 .card p {
     padding: 5px;
 }
@@ -291,12 +301,16 @@ p {
 
     .header {
         flex-wrap: wrap;
+        padding: 20px;
     }
 
     form {
         width: 100%;
         order: 1;
 
+    }
+    .text-city{
+        font-size: 25px;
     }
 
     .input {
@@ -309,11 +323,12 @@ p {
         flex-wrap: wrap;
         order: 1;
         justify-content: center;
+        gap: 10px;
 
     }
 
     .Weather-img {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .cards {
@@ -352,9 +367,21 @@ p {
     .card-next-details{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        box-sizing: border-box;
     }
     .footer{
         flex-direction: column;
     }
+    .card-week{
+        flex-direction: row;
+    }
+    
+}
+@media screen and (max-width:420px) {
+ .next-details{
+       flex-direction: column;
+
+
+    }
+
 }
