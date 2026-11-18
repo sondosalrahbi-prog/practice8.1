@@ -318,7 +318,9 @@ p {
     .input {
         max-width: unset;
     }
-
+.Cweather{
+    padding: 40px 20px;
+}
 
     .Ctop,
     .Cbottom {
